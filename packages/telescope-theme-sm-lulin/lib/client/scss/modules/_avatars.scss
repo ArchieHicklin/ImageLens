@@ -1,0 +1,16 @@
+.avatar {
+  display: visible;
+  .avatar-initials{
+    display: none;
+  }
+}
+.avatar-medium {
+  .avatar-initials{
+    font-size: 0px;
+  }
+}
+.avatar-large {
+  .avatar-initials{
+    font-size: 0px;
+  }
+}

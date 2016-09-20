@@ -1,0 +1,25 @@
+.mobile-nav{
+  .menu-top-level{
+    text-transform: capitalize;
+    font-size: 15px;
+  }
+}
+
+.mobile-menu{
+  .menu-item a {
+    font-weight: normal;
+    font-size: 15px;
+  }
+  .btn.btn-primary, .btn.submit {
+    background: transparent;
+    text-transform: uppercase;
+    border: 1px solid #FF5A5F;
+    color: #FF5A5F;
+  }
+  		.btn.submit:hover {
+        background: #FF5A5F;
+        text-transform: uppercase;
+        border: 1px solid #FF5A5F;
+        color: #222;
+      }
+}

@@ -1,0 +1,54 @@
+input[type="submit"], button, .button, .btn{
+  &.btn-primary, &.submit{
+    border: 1px solid #FF5A5F;
+    background-color: none;
+    color: #FF5A5F;
+    border: 1px solid #808393;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}
+
+.btn-primary:link{
+  border: 1px solid #FF5A5F;
+  background-color: none;
+  color: #FF5A5F;
+  border: 1px solid #808393;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+form textarea {
+    font-size: 16px;
+    color: #2B2D2E;
+    &:focus {
+        border-color: $main;
+    }
+}
+
+form .at-input {
+	font-size: 15px;
+  color: #2B2D2E;
+}
+
+form input[type="text"], form input[type="password"], form input[type="number"], form input[type="email"], form textarea, form .login-form input, .accounts-dialog input[type="text"], .accounts-dialog input[type="password"], .accounts-dialog input[type="number"], .accounts-dialog input[type="email"], .accounts-dialog textarea, .accounts-dialog .login-form input {
+  font-size: 16px;
+  color: #2B2D2E;
+}
+
+.button, .btn{
+  &.btn-primary, &.submit{
+    border: 2px solid #FF5A5F;
+    background-color: #fff;
+    color: #FF5A5F;
+    border: 1px solid #FF5A5F;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}

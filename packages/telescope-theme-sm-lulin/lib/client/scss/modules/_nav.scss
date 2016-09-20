@@ -1,0 +1,56 @@
+// ------------------------------------ Side Nav Layout ------------------------------------ //
+
+$nav-width: 220px;
+
+.side-nav{
+	  .inner-wrapper{
+			@include medium-large{
+		      margin-left: $nav-width;
+	       }
+		}
+    .header{
+    	@include medium-large{
+    		width: $nav-width;
+    	}
+        margin-bottom: 0px;
+        background: white;
+        color: black;
+        .logo {
+            padding: 0 40px;
+            a {
+                font-size: 28px;
+                color: black;
+            }
+            @include medium-large {
+                margin-bottom: 40px;
+                margin-top: 40px;
+                padding: 0 0px;
+                a {
+                    font-size: 48px;
+                }
+            }
+        }
+        .primary-nav, .secondary-nav {
+            font-size: 15px !important;
+            a {
+                font-size: 15px !important;
+            }
+        }
+        input[type="submit"], button, .button, .btn{
+          &.btn-primary, &.submit{
+            background: transparent;
+            text-transform: capitalize;
+            border: 2px solid black;
+            font-size: 15px;
+            letter-spacing: 1px;
+          }
+        }
+				.btn-primary:hover{
+					background: transparent;
+					text-transform: capitalize;
+					border: 2px solid black;
+					font-size: 15px;
+					letter-spacing: 1px;
+				}
+    }
+}

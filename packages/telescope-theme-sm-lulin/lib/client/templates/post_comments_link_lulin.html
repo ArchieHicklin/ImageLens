@@ -1,0 +1,13 @@
+<template name="post_comments_link_lulin">
+  <div class="post-meta-item"> <i class="ion-ios-chatbubble-outline" aria-hidden="true"></i>
+    <a class="comments-link" href="/posts/{{_id}}">
+      <span class="comments-count">{{commentCount}}</span>
+      <span class="comments-action">{{_ 'comments_'}}</span>
+    </a> <i class="ion-ios-heart-outline" aria-hidden="true"></i>
+    <span class="points">{{baseScore}}</span>
+    <span class="unit">{{pointsUnitDisplayText}}</span>
+    {{#if canEdit this}}
+      <a href="{{pathFor route='post_edit' _id=_id}}" class="edit-link goto-edit">{{_ "edit"}}</a>
+    {{/if}}
+  </div>
+</template>

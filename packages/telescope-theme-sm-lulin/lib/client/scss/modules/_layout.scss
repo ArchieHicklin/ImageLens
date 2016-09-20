@@ -1,0 +1,13 @@
+
+body{
+  background: white;
+}
+
+.content-wrapper{
+  padding: 0 0;
+  text-align: center;
+  @include large {
+    padding: 0 10px;
+    text-align: left;
+  }
+}

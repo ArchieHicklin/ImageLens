@@ -1,0 +1,24 @@
+.search {
+	.search-field {
+    color: #444444;
+	  font-size: 15px;
+    @include medium-large {
+      padding: 4px 0px;
+    }
+	}
+  &.empty {
+    .search-field {
+      background: rgba(235,235,235,0.6);
+    }
+  }
+  input {
+  	color: lightgray;
+  }
+	input:before {
+			display:inline-block;
+			position:relative;
+			font-family: Ionicons;
+			content:"\f4a5";
+			font-size:8px;
+	}
+}
