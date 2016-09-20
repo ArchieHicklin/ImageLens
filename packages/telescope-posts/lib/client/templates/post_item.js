@@ -16,5 +16,9 @@ Template.post_item.helpers({
     var postClass = "author-"+post.author;
     postClass = Telescope.callbacks.run("postClass", postClass);
     return postClass;
+  },
+  public_id: function() {
+    var post = this;
+    return post.userId+"_"+post.img;
   }
 });

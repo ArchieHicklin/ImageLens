@@ -59,6 +59,7 @@ Posts.submit = function (post) {
 
   // -------------------------------- Insert ------------------------------- //
 
+  post.url = post.url.slice(0, -1);
   post._id = Posts.insert(post);
 
   // --------------------- Server-Side Async Callbacks --------------------- //

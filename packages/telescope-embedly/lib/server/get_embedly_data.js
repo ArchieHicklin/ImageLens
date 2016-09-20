@@ -28,6 +28,8 @@ getEmbedlyData = function (url) {
     if (!!result.data.images && !!result.data.images.length) // there may not always be an image
       result.data.thumbnailUrl = result.data.images[0].url.replace("http:", ""); // add thumbnailUrl as its own property and remove "http"
 
+      console.log("result.data: ");
+      console.log(result.data);
     return _.pick(result.data, 'title', 'media', 'description', 'thumbnailUrl');
 
   } catch (error) {

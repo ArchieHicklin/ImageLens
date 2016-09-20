@@ -1,5 +1,6 @@
 <template name="post_item">
   <div class="post {{#if sticky}}sticky{{/if}} {{inactiveClass}} {{postClass}}" id="{{_id}}">
+    <img src="{{c.url public_id}}" style="width: 100%;">
     {{> modules zone="postComponents" moduleClass="post-module"}}
   </div>
 </template>

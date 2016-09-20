@@ -36,8 +36,21 @@ Posts.schema = new SimpleSchema({
     type: String,
     optional: true,
     editableBy: ["member", "admin"],
+    defaultValue: "https://www.google.com/images/"+new Date().getTime()+".png",
     autoform: {
-      type: "bootstrap-url"
+      type: "hidden"
+    }
+  },
+  /**
+    Image Upload
+  */
+  img: {
+    type: String,
+    optional: true,
+    editableBy: ["member", "admin"],
+    label: "Image",
+    autoform: {
+      type: "file"
     }
   },
   /**
